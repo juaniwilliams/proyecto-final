@@ -372,7 +372,7 @@
     visibility: visible;
 }
 .contenedor figure:hover > .capa h3{
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 15px;
 }
 .contenedor figure:hover > img{
