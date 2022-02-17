@@ -33,15 +33,15 @@ body {
 .index-container {  
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.3fr 0.4fr 2.6fr 1.4fr; 
+    grid-template-rows: 0.5fr 0.3fr 0.4fr 2.6fr ; 
     gap: 3px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "nav-var"
       "title"
       "description"
-      "carousel"
-      "footer";
+      "photogrid";
+      /* "footer"; */
   }
   
   .nav-var { 
@@ -60,15 +60,16 @@ body {
       display: flex;
      }
   
-  .carousel { 
-      grid-area: carousel;
+  .photogrid { 
+      grid-area: photogrid;
       display: flex;
       justify-content: center;
+      margin-bottom: 3%;
      }
   
-  .footer { 
+  /* .footer { 
       grid-area: footer;
-     }
+     } */
 
 /* Sección de estilos para la nav-bar */
 
@@ -197,16 +198,13 @@ nav ul li.btn.hide i:before{
 /* Fin de estilos para la sección de la descripción del index.html*/
 
 /* Estilos para la sección del carousel del index.html*/
-.img-fluid > img{
-   
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
 
-}
+
+/* Para un comportamiento responsive */
+
 
 @media screen and (max-width:480px) {
-    .carousel {
+    .photogrid {
         padding: 0px 20px;
     }
     
@@ -472,3 +470,56 @@ nav ul li.btn.hide i:before{
 /* Fin estilos para service container */
 
 
+/* Estilos para la vista de escribanos */
+
+.escribanos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  
+}
+
+/* 
+.quienesSomos {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  gap: 3px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nav-var"
+    "escribanos";
+}
+
+.nav-var { grid-area: nav-var; }
+
+.escribanos {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "escribano1 escribano2";
+  grid-area: escribanos;
+}
+
+.escribano1 { 
+  grid-area: escribano1; 
+  
+  justify-content: center;
+}
+
+.escribano2 { 
+  grid-area: escribano2;
+  
+  justify-content: center;
+ }
+ */
+
+
+
+/* Fin de Estilos para la vista de escribanos
