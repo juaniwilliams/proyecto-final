@@ -1,0 +1,33 @@
+//Estilos para el background de las vistas
+
+* {
+    
+    margin: 0;
+    padding: 0;
+ 
+}
+
+/* Incluyo las fuentes a utilizar en mis vistas */
+    
+@font-face {
+    
+    font-family: ChakraPetch-Light;
+    src: url("../../fonts/Chakra_Petch/ChakraPetch-Light.ttf");
+  
+  }
+  
+  /* Estilos del Body */
+  body {
+      
+      background-image: url("../../images/background.jpg");
+      background-size:cover;
+      min-height: 100vh;
+      
+      display: flex;
+      flex-direction: column;
+         
+  }
+  
+  *, *::before, *::after {
+      box-sizing: inherit;
+  }

@@ -1,0 +1,417 @@
+@charset "UTF-8";
+/* Sección de estilos para la nav-bar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pacifico", cursive;
+}
+
+nav {
+  background: rgba(71, 71, 73, 0.9);
+  padding: 5px 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+nav ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+nav ul li.items:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #d4a344;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+nav ul li.items:hover:after {
+  opacity: 1;
+  bottom: 8px;
+}
+
+nav ul li.logo {
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+nav ul li:hover a {
+  color: #d4a344;
+}
+
+nav ul li i {
+  font-size: 23px;
+}
+
+nav ul li.btn {
+  display: none;
+}
+
+nav ul li.btn.hide i:before {
+  content: "\f00d";
+}
+
+@media all and (max-width: 900px) {
+  nav {
+    padding: 5px 30px;
+  }
+
+  nav ul li.items {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li.items.show {
+    display: block;
+  }
+
+  nav ul li.btn {
+    display: block;
+  }
+
+  nav ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #d4a344, inset 0 0 10px #d4a344;
+  }
+
+  nav ul li.items:hover:after {
+    opacity: 0;
+  }
+}
+/* Fin de la sección de estilos para la nav-bar */
+/* Estilos para la sección del footer*/
+.pie-pagina {
+  width: 100%;
+  background-color: rgba(71, 71, 73, 0.9);
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: #d4a344;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: #050505;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+.interest-links li {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.interest-links a {
+  color: black;
+}
+
+/* Para que el mapa de Google sea responsive */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+/* Fin de estilos para la sección del footer*/
+/* Estilos para service container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2.6fr 1.4fr;
+  gap: 3px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nav-var" "services" "footer";
+}
+
+.nav-var {
+  grid-area: nav-var;
+}
+
+.services {
+  grid-area: services;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 1%;
+}
+
+.first-item {
+  order: -1;
+}
+
+.last-item {
+  order: 1;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Acá incluyo la animación de las tarjetas de la vista de serrvicios*/
+.contenedor {
+  width: 100%;
+  display: flex;
+  height: auto;
+  margin-top: 5%;
+}
+
+.contenedor figure {
+  position: relative;
+  height: 250px;
+  cursor: pointer;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.contenedor figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 103, 123, 0.7);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedor figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedor figure:hover > .capa h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.contenedor figure:hover > img {
+  transform: scale(1.3);
+}
+
+.contenedor figure .capa h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+  margin-top: 30px;
+}
+
+.contenedor figure .capa p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+/* Fin de estilos para las tarjetas de servicios */
+/* Estilos para la vista de escribanos */
+.escribanos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Fin de Estilos para la vista de escribanos */
+.index-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.3fr 0.4fr 2.6fr;
+  gap: 3px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nav-var" "title" "description" "photogrid";
+  /* "footer"; */
+}
+
+.nav-var {
+  grid-area: nav-var;
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  grid-area: description;
+  display: flex;
+}
+
+.photogrid {
+  grid-area: photogrid;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+/* Estilos para la sección del título del index.html*/
+.title h1 {
+  font-size: 35px;
+  color: #d4a344;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  animation: bounce1 0.5s alternate infinite ease-in;
+}
+
+/* Fin de estilos para la sección del título del index.html */
+/* Estilos para la sección de la descripción del index.html*/
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.description p {
+  font-family: ChakraPetch-Light;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin: 0.3% 3% 0.1% 3%;
+}
+
+/* Fin de estilos para la sección de la descripción del index.html*/
+/* Estilos para la sección del carousel del index.html*/
+/* Para un comportamiento responsive */
+@media screen and (max-width: 480px) {
+  .photogrid {
+    padding: 0px 20px;
+  }
+}
+/* Fin de estilos para la sección del carousel del index.html*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Incluyo las fuentes a utilizar en mis vistas */
+@font-face {
+  font-family: ChakraPetch-Light;
+  src: url("../../fonts/Chakra_Petch/ChakraPetch-Light.ttf");
+}
+/* Estilos del Body */
+body {
+  background-image: url("../../images/background.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */

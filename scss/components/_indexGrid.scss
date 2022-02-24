@@ -1,0 +1,84 @@
+// Estilos para grid del index
+
+.index-container {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.3fr 0.4fr 2.6fr ; 
+    gap: 3px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav-var"
+      "title"
+      "description"
+      "photogrid";
+      /* "footer"; */
+  }
+  
+  .nav-var { 
+            grid-area: nav-var;
+    
+    }
+  
+  .title { 
+      grid-area: title; 
+      display: flex;
+      justify-content: center;
+}
+  
+  .description { 
+      grid-area: description;
+      display: flex;
+     }
+  
+  .photogrid { 
+      grid-area: photogrid;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3%;
+     }
+
+     //Fin de estilos para grid
+
+     /* Estilos para la sección del título del index.html*/
+
+.title h1 {
+
+    font-size: 35px;
+    color: #d4a344;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    animation: bounce1 .5s alternate infinite ease-in;
+}
+
+/* Fin de estilos para la sección del título del index.html */
+
+/* Estilos para la sección de la descripción del index.html*/
+.description {
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+.description p {
+    
+    font-family: ChakraPetch-Light;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0.3% 3% 0.1% 3%;
+}
+
+/* Fin de estilos para la sección de la descripción del index.html*/
+
+/* Estilos para la sección del carousel del index.html*/
+
+
+/* Para un comportamiento responsive */
+
+
+@media screen and (max-width:480px) {
+    .photogrid {
+        padding: 0px 20px;
+    }
+    
+}
+
+/* Fin de estilos para la sección del carousel del index.html*/

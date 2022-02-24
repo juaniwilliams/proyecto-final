@@ -354,21 +354,6 @@ nav ul li.btn.hide i:before{
       grid-area: footer;
      }
   
- /* Estilos para service container */
-    
-    
- /* .services{
-    
-    width: 60%;
-    margin: 3% 0% 3% 0%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
-} */
-
-
 
 /* Acá incluyo la animación de las tarjetas de la vista de serrvicios*/
 
@@ -434,42 +419,6 @@ nav ul li.btn.hide i:before{
 /* Fin de estilos para las tarjetas de servicios */
 
 
-
-
-/* Fin estilos para service container */
-
-
-
-/* .container {  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 2.6fr 1.4fr;
-  gap: 3px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "nav-var"
-    "services"
-    "footer";
-}
-
-.nav-var { grid-area: nav-var; }
-
-.services {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1px 1px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". . ."
-    ". . .";
-  grid-area: services;
-}
-
-.footer { grid-area: footer; }
- */
-
-/* Fin estilos para service container */
-
-
 /* Estilos para la vista de escribanos */
 
 .escribanos {
@@ -481,45 +430,6 @@ nav ul li.btn.hide i:before{
   margin-bottom: 1%;
   
 }
-
-/* 
-.quienesSomos {  
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1fr;
-  gap: 3px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "nav-var"
-    "escribanos";
-}
-
-.nav-var { grid-area: nav-var; }
-
-.escribanos {  
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "escribano1 escribano2";
-  grid-area: escribanos;
-}
-
-.escribano1 { 
-  grid-area: escribano1; 
-  
-  justify-content: center;
-}
-
-.escribano2 { 
-  grid-area: escribano2;
-  
-  justify-content: center;
- }
- */
-
 
 
 /* Fin de Estilos para la vista de escribanos
