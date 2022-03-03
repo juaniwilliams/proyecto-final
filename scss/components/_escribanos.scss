@@ -1,12 +1,15 @@
+@import '../base/extends';
+@import '../base/maps';
+
 /* Estilos para la vista de escribanos */
 
 .escribanos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+   
+    @extend %acomodador;
+    flex-direction: map-get($losEscri, direccion);
+    column-gap: map-get($losEscri, espacio);
+    margin-top: map-get($losEscri, margen-arriba);
+    margin-bottom: map-get($losEscri, margen-abajo);
     
   }
   

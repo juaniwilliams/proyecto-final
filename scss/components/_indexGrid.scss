@@ -1,3 +1,7 @@
+@import '../base/extends';
+@import 'mixins.scss';
+@import'../base/variables';
+
 // Estilos para grid del index
 
 .index-container {  
@@ -21,8 +25,7 @@
   
   .title { 
       grid-area: title; 
-      display: flex;
-      justify-content: center;
+      @extend %acomodador;
 }
   
   .description { 
@@ -32,8 +35,7 @@
   
   .photogrid { 
       grid-area: photogrid;
-      display: flex;
-      justify-content: center;
+      @extend %acomodador;
       margin-bottom: 3%;
      }
 
@@ -43,19 +45,27 @@
 
 .title h1 {
 
-    font-size: 35px;
-    color: #d4a344;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    animation: bounce1 .5s alternate infinite ease-in;
+    //Aplico mixin y uso de variable
+    @include titleStyle(35px,#d4a344, $sw-shadow-title, text-scale 1s ease 1s 1 normal forwards );
+
 }
+
+@keyframes text-scale {
+    0% {
+      transform: scale(0.5);
+    }
+    
+    100% {
+      transform: scale(1);
+    }
+  }
 
 /* Fin de estilos para la sección del título del index.html */
 
 /* Estilos para la sección de la descripción del index.html*/
 .description {
     
-    display: flex;
-    justify-content: center;
+    @extend %acomodador;
 
 }
 

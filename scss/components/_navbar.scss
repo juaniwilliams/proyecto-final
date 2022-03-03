@@ -1,3 +1,5 @@
+@import '../base/extends';
+
 /* Sección de estilos para la nav-bar */
 
 *{
@@ -6,21 +8,25 @@
     box-sizing: border-box;
     font-family: 'Pacifico', cursive;
   }
+
   nav{
     background: rgba(71, 71, 73, 0.9);
     padding: 5px 40px;
   }
+
   nav ul{
     list-style: none;
-    display: flex;
+    @extend %acomodador;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    
   }
+  
   nav ul li{
     padding: 15px 0;
     cursor: pointer;
   }
+
   nav ul li.items{
     position: relative;
     width: auto;
@@ -28,6 +34,7 @@
     text-align: center;
     order: 3;
   }
+
   nav ul li.items:after{
     position: absolute;
     content: '';
@@ -39,10 +46,12 @@
     opacity: 0;
     transition: all 0.2s linear;
   }
+
   nav ul li.items:hover:after{
     opacity: 1;
     bottom: 8px;
   }
+
   nav ul li.logo{
     flex: 1;
     color: white;
@@ -51,24 +60,30 @@
     cursor: default;
     user-select: none;
   }
+
   nav ul li a{
     color: white;
     font-size: 18px;
     text-decoration: none;
     transition: .4s;
   }
+
   nav ul li:hover a{
     color: rgba(212, 163, 68, 1);
   }
+
   nav ul li i{
     font-size: 23px;
   }
+
   nav ul li.btn{
     display: none;
   }
+
   nav ul li.btn.hide i:before{
     content: '\f00d';
   }
+
   @media all and (max-width: 900px){
     nav{
       padding: 5px 30px;

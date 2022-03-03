@@ -1,0 +1,10 @@
+@import '../base/variables';
+
+@mixin titleStyle($tamaño-fuente, $color-fuente, $sw-shadow-title, $animacion ) {
+
+    font-size: $tamaño-fuente;
+    color: $color-fuente;
+    text-shadow: $sw-shadow-title;
+    animation: $animacion;
+    
+}

@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.description, .photogrid, .title, .escribanos, .pie-pagina .grupo-1 .box figure, nav ul {
+  display: flex;
+  justify-content: center;
+}
+
 /* Sección de estilos para la nav-bar */
 * {
   margin: 0;
@@ -14,10 +19,8 @@ nav {
 
 nav ul {
   list-style: none;
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
 }
 
 nav ul li {
@@ -110,6 +113,11 @@ nav ul li.btn.hide i:before {
   }
 }
 /* Fin de la sección de estilos para la nav-bar */
+.description, .photogrid, .title, .escribanos, .pie-pagina .grupo-1 .box figure, nav ul {
+  display: flex;
+  justify-content: center;
+}
+
 /* Estilos para la sección del footer*/
 .pie-pagina {
   width: 100%;
@@ -129,8 +137,6 @@ nav ul li.btn.hide i:before {
 .pie-pagina .grupo-1 .box figure {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -318,17 +324,30 @@ nav ul li.btn.hide i:before {
 }
 
 /* Fin de estilos para las tarjetas de servicios */
+.description, .photogrid, .title, .escribanos, nav ul, .pie-pagina .grupo-1 .box figure {
+  display: flex;
+  justify-content: center;
+}
+
 /* Estilos para la vista de escribanos */
 .escribanos {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
   column-gap: 5%;
   margin-top: 1%;
   margin-bottom: 1%;
 }
 
 /* Fin de Estilos para la vista de escribanos */
+.description, .photogrid, .title, nav ul, .pie-pagina .grupo-1 .box figure, .escribanos {
+  display: flex;
+  justify-content: center;
+}
+
+.description, .photogrid, .title, nav ul, .pie-pagina .grupo-1 .box figure, .escribanos {
+  display: flex;
+  justify-content: center;
+}
+
 .index-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -345,8 +364,6 @@ nav ul li.btn.hide i:before {
 
 .title {
   grid-area: title;
-  display: flex;
-  justify-content: center;
 }
 
 .description {
@@ -356,8 +373,6 @@ nav ul li.btn.hide i:before {
 
 .photogrid {
   grid-area: photogrid;
-  display: flex;
-  justify-content: center;
   margin-bottom: 3%;
 }
 
@@ -366,16 +381,19 @@ nav ul li.btn.hide i:before {
   font-size: 35px;
   color: #d4a344;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  animation: bounce1 0.5s alternate infinite ease-in;
+  animation: text-scale 1s ease 1s 1 normal forwards;
 }
 
+@keyframes text-scale {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* Fin de estilos para la sección del título del index.html */
 /* Estilos para la sección de la descripción del index.html*/
-.description {
-  display: flex;
-  justify-content: center;
-}
-
 .description p {
   font-family: ChakraPetch-Light;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
