@@ -1,6 +1,7 @@
+@import'../base/variables';
 @import '../base/extends';
 @import 'mixins.scss';
-@import'../base/variables';
+
 
 // Estilos para grid del index
 
@@ -31,6 +32,7 @@
   .description { 
       grid-area: description;
       display: flex;
+      color: white;
      }
   
   .photogrid { 
@@ -46,7 +48,7 @@
 .title h1 {
 
     //Aplico mixin y uso de variable
-    @include titleStyle(35px,#d4a344, $sw-shadow-title, text-scale 1s ease 1s 1 normal forwards );
+    @include titleStyle(35px, $my-color, $sw-shadow-title, text-scale 1s ease 1s 1 normal forwards );
 
 }
 
