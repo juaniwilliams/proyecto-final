@@ -510,6 +510,10 @@ nav ul li.btn.hide i:before {
   .container .contactInfo {
     width: 100%;
   }
+
+  .contactForm {
+    width: 100%;
+  }
 }
 .description, .photogrid, .title, nav ul, .pie-pagina .grupo-1 .box figure, .escribanos {
   display: flex;
@@ -597,6 +601,11 @@ nav ul li.btn.hide i:before {
 body {
   background: black;
   background: linear-gradient(90deg, black 0%, #2d2d33 35%, #2c3638 100%);
+}
+
+.text-center {
+  color: white !important;
+  padding-top: 2% !important;
 }
 
 /*# sourceMappingURL=style.css.map */
