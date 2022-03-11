@@ -2,8 +2,8 @@
 
 /* Estilos para service container */
     
-.container {  
-    display: grid;
+.contenedor-servicios {  
+   display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: 0.5fr 2.6fr 1.4fr;
    gap: 3px 0px;
@@ -107,3 +107,27 @@
 }
 
 /* Fin de estilos para las tarjetas de servicios */
+
+// Responsive celular
+ @media (max-width:320px) {
+   .services{
+      width: 100%;
+   }
+
+   .contenedor{
+      justify-content: center;
+   }
+}
+
+// Reponsive tablet
+@media (min-width:321px) and (max-width:768px) {
+   .services{
+      width: 100%;
+   }
+
+   .contenedor{
+      justify-content: center;
+   }
+}
+
+

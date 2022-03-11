@@ -229,7 +229,7 @@ nav ul li.btn.hide i:before {
 }
 /* Fin de estilos para la sección del footer*/
 /* Estilos para service container */
-.container {
+.contenedor-servicios {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 2.6fr 1.4fr;
@@ -334,6 +334,24 @@ nav ul li.btn.hide i:before {
 }
 
 /* Fin de estilos para las tarjetas de servicios */
+@media (max-width: 320px) {
+  .services {
+    width: 100%;
+  }
+
+  .contenedor {
+    justify-content: center;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  .services {
+    width: 100%;
+  }
+
+  .contenedor {
+    justify-content: center;
+  }
+}
 .description, .photogrid, .title, .escribanos, nav ul, .pie-pagina .grupo-1 .box figure {
   display: flex;
   justify-content: center;
