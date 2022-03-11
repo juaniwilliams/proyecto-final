@@ -25,3 +25,31 @@
 }
   
   /* Fin de Estilos para la vista de escribanos */
+
+  // Responsive celular
+ @media (max-width:320px) {
+  .escribanos{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+  }
+
+  .card {
+    width: 16rem!important;
+  }
+
+}
+
+// Reponsive tablet
+@media (min-width:321px) and (max-width:768px) {
+  .escribanos{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+  }
+
+  .card {
+    width: 23rem!important;
+  }
+  
+}
