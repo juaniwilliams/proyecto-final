@@ -643,6 +643,10 @@ body {
   background: linear-gradient(90deg, black 0%, #2d2d33 35%, #2c3638 100%);
 }
 
+.disclaimer {
+  display: none;
+}
+
 .text-center {
   color: white !important;
   padding-top: 2% !important;
