@@ -4,6 +4,11 @@
   justify-content: center;
 }
 
+.description, .photogrid, .title, .escribanos, .pie-pagina .grupo-1 .box figure, nav ul {
+  display: flex;
+  justify-content: center;
+}
+
 /* Sección de estilos para la nav-bar */
 * {
   margin: 0;
@@ -179,7 +184,7 @@ nav ul li.btn.hide i:before {
   color: #fff;
 }
 
-.pie-pagina .grupo-2 small {
+.pie-pagina .grupo-2 p {
   font-size: 15px;
 }
 
@@ -555,11 +560,6 @@ nav ul li.btn.hide i:before {
     width: 100%;
   }
 }
-.description, .photogrid, .title, nav ul, .pie-pagina .grupo-1 .box figure, .escribanos {
-  display: flex;
-  justify-content: center;
-}
-
 .description, .photogrid, .title, nav ul, .pie-pagina .grupo-1 .box figure, .escribanos {
   display: flex;
   justify-content: center;
